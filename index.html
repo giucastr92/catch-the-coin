@@ -66,11 +66,10 @@
     <script type="module">
       // --- Import ESM da CDN (jsDelivr) ---
       // AppKit (modal) + adapter Wagmi + reti EVM
-      import { createAppKit } from 'https://cdn.jsdelivr.net/npm/@reown/appkit/+esm'
-      import { WagmiAdapter } from 'https://cdn.jsdelivr.net/npm/@reown/appkit-adapter-wagmi/+esm'
-      import { mainnet, polygon } from 'https://cdn.jsdelivr.net/npm/@reown/appkit/networks/+esm'
-      // Azioni wagmi per firma e stato account
-      import { getAccount, signMessage } from 'https://cdn.jsdelivr.net/npm/@wagmi/core/+esm'
+        import { createAppKit } from 'https://cdn.jsdelivr.net/npm/@reown/appkit@1.2.5/+esm'
+        import { WagmiAdapter } from 'https://cdn.jsdelivr.net/npm/@reown/appkit-adapter-wagmi@1.2.5/+esm'
+        import { mainnet, polygon } from 'https://cdn.jsdelivr.net/npm/@reown/appkit@1.2.5/networks/+esm'
+        import { getAccount, signMessage } from 'https://cdn.jsdelivr.net/npm/@wagmi/core@2.13.4/+esm'
 
       // --- CONFIG REOWN / APPKIT ---
       const projectId = '143d475e-39c3-4bff-9c22-4d34a8db3ba1' // <<<< Sostituisci con il tuo ID dalla dashboard Reown
@@ -247,3 +246,4 @@
     </script>
   </body>
 </html>
+
